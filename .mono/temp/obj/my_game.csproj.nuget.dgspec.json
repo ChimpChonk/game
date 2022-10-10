@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\sp\\Desktop\\godotgame\\project\\my_game.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sp\\Desktop\\godotgame\\project\\my_game.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sp\\Desktop\\godotgame\\project\\my_game.csproj",
+        "projectName": "my_game",
+        "projectPath": "C:\\Users\\sp\\Desktop\\godotgame\\project\\my_game.csproj",
+        "packagesPath": "C:\\Users\\sp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sp\\Desktop\\godotgame\\project\\.mono\\temp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

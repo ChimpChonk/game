@@ -1,0 +1,9 @@
+C:\Users\sp\Desktop\godotgame\project\.mono\temp\bin\Debug\my_game.dll
+C:\Users\sp\Desktop\godotgame\project\.mono\temp\bin\Debug\my_game.pdb
+C:\Users\sp\Desktop\godotgame\project\.mono\temp\obj\Debug\my_game.csproj.AssemblyReference.cache
+C:\Users\sp\Desktop\godotgame\project\.mono\temp\obj\Debug\my_game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sp\Desktop\godotgame\project\.mono\temp\obj\Debug\my_game.AssemblyInfoInputs.cache
+C:\Users\sp\Desktop\godotgame\project\.mono\temp\obj\Debug\my_game.AssemblyInfo.cs
+C:\Users\sp\Desktop\godotgame\project\.mono\temp\obj\Debug\my_game.csproj.CoreCompileInputs.cache
+C:\Users\sp\Desktop\godotgame\project\.mono\temp\obj\Debug\my_game.dll
+C:\Users\sp\Desktop\godotgame\project\.mono\temp\obj\Debug\my_game.pdb
