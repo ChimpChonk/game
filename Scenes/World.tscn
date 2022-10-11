@@ -6,6 +6,17 @@
 [node name="World" type="Node2D"]
 
 [node name="TileMap" parent="." instance=ExtResource( 2 )]
+position = Vector2( -409, -72 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 38, 96 )
+position = Vector2( -355, -2 )
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+current = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+drag_margin_left = 0.1
+drag_margin_right = 0.1
+editor_draw_limits = true
+editor_draw_drag_margin = true

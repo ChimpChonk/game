@@ -5,12 +5,12 @@ public class Player : KinematicBody2D
 {
 
     Vector2 direction;
-    float movementSpeed = 500;
+    float movementSpeed = 250;
     float gravity = 90;
     float maxFallSpeed = 1000;
     float minFallSpeed = 5;
 
-    float jumpForce = 1000;
+    float jumpForce = 1250;
 
     Sprite sprite;
     AnimationPlayer animationPlayer;
@@ -54,6 +54,22 @@ public class Player : KinematicBody2D
         else if (direction.x < 0)
         {
             sprite.FlipH = true;
+        }
+
+        //Player animations
+        if(IsOnFloor() && direction.x == 0)
+        {
+            animationPlayer.Play("idle");
+        }
+
+        else if(IsOnFloor() && direction.x != 0)
+        {
+            animationPlayer.Play("run");
+        }
+
+        else if (!IsOnFloor())
+        {
+            animationPlayer.Play("jump");
         }
 
         direction =  MoveAndSlide(direction, Vector2.Up);
