@@ -1,22 +1,41 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/TileMap.tscn" type="PackedScene" id=2]
 
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2147, 59.5 )
+
 [node name="World" type="Node2D"]
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
 
 [node name="TileMap" parent="." instance=ExtResource( 2 )]
-position = Vector2( -409, -72 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -355, -2 )
+position = Vector2( 38, 96 )
 
-[node name="Camera2D2" type="Camera2D" parent="Player"]
+[node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
+limit_left = 0
+limit_bottom = 500
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 smoothing_enabled = true
+smoothing_speed = 2.0
 drag_margin_left = 0.1
 drag_margin_right = 0.1
 editor_draw_limits = true
-editor_draw_drag_margin = true
+
+[node name="fallZone" type="Area2D" parent="."]
+position = Vector2( 374, 535 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fallZone"]
+position = Vector2( 2137, 49.5 )
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="fallZone" to="Player" method="_on_fallZone_body_entered"]
