@@ -9,7 +9,7 @@ public class Player : KinematicBody2D
     float gravity = 90;
     float maxFallSpeed = 1000;
     float minFallSpeed = 5;
-
+//ckfsf
     float jumpForce = 1250;
 
     Sprite sprite;
