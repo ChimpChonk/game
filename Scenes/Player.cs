@@ -75,10 +75,11 @@ public class Player : KinematicBody2D
         direction =  MoveAndSlide(direction, Vector2.Up);
     }
 
-    private void _on_fallZone_body_entered(Object body)
+
+    //Reset player if fallen trough a gap
+    public void _on_fallZone_body_exited(Node body)
     {
         GetTree().ChangeScene("res://Scenes/World.tscn");
     } 
-
 
 }
