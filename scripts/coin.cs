@@ -8,10 +8,10 @@ public class coin : Area2D
     {
         animationPlayer = (AnimationPlayer)GetNode("AnimationPlayer");
     }
-    private void _on_coin_body_entered(Node Body)
+    private void _on_coin_body_entered(Node body)
     {
-        
         animationPlayer.Play("coin_bounce");
+        
     }
 
     private void _on_AnimationPlayer_animation_finished(AnimationPlayer animation)
