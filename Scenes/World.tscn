@@ -1,10 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/TileMap.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/coin.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 2147, 59.5 )
+extents = Vector2( 1117, 59.5 )
 
 [node name="World" type="Node2D"]
 __meta__ = {
@@ -12,9 +13,12 @@ __meta__ = {
 }
 
 [node name="TileMap" parent="." instance=ExtResource( 2 )]
+collision_layer = 2
+collision_mask = 49
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 38, 96 )
+position = Vector2( 42, 21 )
+collision_mask = 30
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
@@ -29,13 +33,26 @@ drag_margin_right = 0.1
 editor_draw_limits = true
 
 [node name="fallZone" type="Area2D" parent="."]
-position = Vector2( 3, 512 )
+position = Vector2( 1987, 528 )
+collision_layer = 4
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fallZone"]
-position = Vector2( 2137, 49.5 )
+position = Vector2( 1107, 49.5 )
 shape = SubResource( 1 )
+
+[node name="coin1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 907, 265 )
+collision_layer = 0
+
+[node name="coin2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1152, 95 )
+collision_layer = 0
+
+[node name="coin3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1152, 95 )
+collision_layer = 0
 
 [connection signal="body_exited" from="fallZone" to="Player" method="_on_fallZone_body_exited"]

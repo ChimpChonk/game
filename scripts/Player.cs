@@ -5,7 +5,7 @@ public class Player : KinematicBody2D
 {
 
     Vector2 direction;
-    float movementSpeed = 250;
+    float movementSpeed = 300;
     float gravity = 90;
     float maxFallSpeed = 1000;
     float minFallSpeed = 5;
@@ -77,7 +77,7 @@ public class Player : KinematicBody2D
 
 
     //Reset player if fallen trough a gap
-    public void _on_fallZone_body_exited(Node body)
+    private void _on_fallZone_body_exited(Node body)
     {
         GetTree().ChangeScene("res://Scenes/World.tscn");
     } 

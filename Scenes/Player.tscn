@@ -1,10 +1,11 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assects/simple_platformer.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/Player.cs" type="Script" id=2]
+[ext_resource path="res://scripts/Player.cs" type="Script" id=2]
 
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 11.5, 29 )
+[sub_resource type="CapsuleShape2D" id=6]
+radius = 11.5
+height = 37.0
 
 [sub_resource type="Animation" id=3]
 length = 0.001
