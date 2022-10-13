@@ -1,9 +1,9 @@
 using Godot;
 using System;
-using System.IO;
 
 public class Player : KinematicBody2D
 {
+
 
     Vector2 direction;
     float movementSpeed = 300;
@@ -12,7 +12,7 @@ public class Player : KinematicBody2D
     float minFallSpeed = 5;
 //ckfsf
     float jumpForce = 1250;
-    int coins = 0;
+    //int coins = 0;
 
     Sprite sprite;
     AnimationPlayer animationPlayer;
@@ -84,10 +84,11 @@ public class Player : KinematicBody2D
         GetTree().ChangeScene("res://Scenes/World.tscn");
     } 
 
-    //Collected coins
-    public void Add_coin()
+    /*public void Add_coin()
     {
         coins = coins + 1;
-    }
+        GD.Print(coins);
+    } */
+
 
 }

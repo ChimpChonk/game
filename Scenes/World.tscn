@@ -44,15 +44,12 @@ position = Vector2( 1107, 49.5 )
 shape = SubResource( 1 )
 
 [node name="coin1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 907, 265 )
-collision_layer = 0
+position = Vector2( 578, 273 )
 
 [node name="coin2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1152, 95 )
-collision_layer = 0
+position = Vector2( 457, 273 )
 
 [node name="coin3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1152, 95 )
-collision_layer = 0
+position = Vector2( 343, 270 )
 
 [connection signal="body_exited" from="fallZone" to="Player" method="_on_fallZone_body_exited"]
