@@ -4,8 +4,8 @@
 [ext_resource path="res://scripts/Player.cs" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=6]
-radius = 11.5
-height = 37.0
+radius = 13.0
+height = 34.0
 
 [sub_resource type="Animation" id=3]
 length = 0.001
@@ -81,7 +81,7 @@ region_enabled = true
 region_rect = Rect2( 0, -4, 64, 64 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.5, 2 )
+position = Vector2( 0, 2 )
 shape = SubResource( 6 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

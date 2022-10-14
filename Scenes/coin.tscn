@@ -59,7 +59,7 @@ shape = SubResource( 1 )
 scale = Vector2( 0.710745, 0.707463 )
 frames = SubResource( 2 )
 animation = "spin"
-frame = 2
+frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

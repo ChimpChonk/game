@@ -12,7 +12,7 @@ public class Player : KinematicBody2D
     float minFallSpeed = 5;
 //ckfsf
     float jumpForce = 1250;
-    //int coins = 0;
+    public int coins = 0;
 
     Sprite sprite;
     AnimationPlayer animationPlayer;
@@ -84,11 +84,13 @@ public class Player : KinematicBody2D
         GetTree().ChangeScene("res://Scenes/World.tscn");
     } 
 
-    /*public void Add_coin()
+
+    public int Add_coin()
     {
         coins = coins + 1;
         GD.Print(coins);
-    } */
+        return coins;
+    } 
 
 
 }
