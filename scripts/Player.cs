@@ -13,6 +13,7 @@ public class Player : KinematicBody2D
 //ckfsf
     float jumpForce = 1250;
     public int coins = 0;
+    int coincall = 0;
 
     Sprite sprite;
     AnimationPlayer animationPlayer;
@@ -20,6 +21,17 @@ public class Player : KinematicBody2D
     {
         sprite = (Sprite)GetNode("Sprite");
         animationPlayer = (AnimationPlayer)GetNode("AnimationPlayer");
+    }
+        public int Add_coin(int coin)
+    {
+        coins = coincall + 2;
+        GD.Print(coins);
+        return coins;
+    } 
+
+    public override void _Process(float delta)
+    {
+        coincall = coins;
     }
 
 
@@ -85,12 +97,6 @@ public class Player : KinematicBody2D
     } 
 
 
-    public int Add_coin()
-    {
-        coins = coins + 1;
-        GD.Print(coins);
-        return coins;
-    } 
 
 
 }

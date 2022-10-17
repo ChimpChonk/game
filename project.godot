@@ -13,6 +13,10 @@ config_version=4
 config/name="my_game"
 config/icon="res://icon.png"
 
+[autoload]
+
+Coin="*res://scripts/Coin.cs"
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
