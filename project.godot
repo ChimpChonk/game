@@ -15,7 +15,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Coin="*res://scripts/Coin.cs"
+Coin="*res://scripts/coin.cs"
 
 [gui]
 

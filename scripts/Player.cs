@@ -22,17 +22,7 @@ public class Player : KinematicBody2D
         sprite = (Sprite)GetNode("Sprite");
         animationPlayer = (AnimationPlayer)GetNode("AnimationPlayer");
     }
-        public int Add_coin(int coin)
-    {
-        coins = coincall + 2;
-        GD.Print(coins);
-        return coins;
-    } 
 
-    public override void _Process(float delta)
-    {
-        coincall = coins;
-    }
 
 
     public override void _PhysicsProcess(float delta)
@@ -87,6 +77,8 @@ public class Player : KinematicBody2D
         }
 
         direction =  MoveAndSlide(direction, Vector2.Up);
+
+        GD.Print(coins);
     }
 
 

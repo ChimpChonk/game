@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class Coin : Area2D
+public class coin : Area2D
 {
 
     Player player = new Player();
@@ -19,8 +19,13 @@ public class Coin : Area2D
     public void _on_coin_body_entered(Node body)
     {
         animationPlayer.Play("coin_bounce");
-        player.coins = player.Add_coin(player.coins + 1);
+        player.coins = player.coins + 2;
+        GD.Print(player.coins);
+
+
     }
+
+    
 
     private void _on_AnimationPlayer_animation_finished(AnimationPlayer animation)
     {
